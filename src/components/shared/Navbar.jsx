@@ -59,7 +59,7 @@ function NavBar() {
     };
 
     return (
-        <AppBar position="static" className='bg-transparent shadow-none'>
+        <AppBar position="static" sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Box>
@@ -110,7 +110,7 @@ function NavBar() {
                         {
                             navItems.map(ele => {
                                 return <Link href={ele.pathname} key={ele.id}>
-                                    <Button className='text-gray-500'>{ele.route}</Button>
+                                    <Button sx={{ color: "gray" }}>{ele.route}</Button>
                                 </Link>
                             })
                         }
