@@ -31,19 +31,19 @@ const Footer = () => {
         }
     ];
     return (
-        <Box>
+        <Box sx={{ backgroundColor: "#00001a", padding: "100px 5px" }}>
             <Container>
                 {/* -----------------icons-------------------- */}
-                <Stack direction="row" justifyContent="center">
-                    <IconButton>
+                <Stack direction="row" justifyContent="center" spacing={2}>
+                    <p className='text-white'>
                         <Facebook></Facebook>
-                    </IconButton>
-                    <IconButton>
+                    </p>
+                    <p className='text-white'>
                         <Twitter></Twitter>
-                    </IconButton>
-                    <IconButton>
+                    </p>
+                    <p className='text-white'>
                         <YouTube></YouTube>
-                    </IconButton>
+                    </p>
                 </Stack>
 
 
